@@ -1,16 +1,16 @@
 /*Registrar datos*/
 
 /*Departamentos*/
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('01','Recursos Humanos');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('02','Contabilidad');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('03','Administracion');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('04','Mesa de ayuda');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('05','Dep de IT');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('06','Ventas');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('07','Transporte');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('08','Inventario');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('09','Atencion al cliente');
-insert into Departamentos(departamento_codigo,nombre_departamento) values ('10','Gerencia');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('RH','Recursos Humanos');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('CON','Contabilidad');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('ADM','Administracion');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('MAY','Mesa de ayuda');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('IT','Dep de IT');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('VEN','Ventas');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('TRA','Transporte');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('INV','Inventario');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('ATC','Atencion al cliente');
+insert into Departamentos(departamento_codigo,nombre_departamento) values ('GRC','Gerencia');
 
 select * from Departamentos;
 
@@ -30,3 +30,5 @@ insert into Empleados(tipo_documento,numero_documento,nombres,apellidos,departam
 insert into Empleados(tipo_documento,numero_documento,nombres,apellidos,departamento_id,direccion,correo_electronico,telefono) values('RC', '1587463295', 'Luisa', 'Pereira','5','Calle 72 # 13-28','lpereira@gmail.com', '3187459813');
 
 select * from Empleados;
+
+UPDATE  Empleados SET tipo_documento='TI' where id=1;
