@@ -13,9 +13,9 @@ public class Conexion {
 
     private String db="Empleados";
     private Connection conex= null;
-    private String usuario="AdminDB@sicivp-server";
-    private String password="FA-200306";
-    private String url="jdbc:mysql://sicivp-server.mysql.database.azure.com:3306/"+db;
+    private String usuario="root";
+    private String password="";
+    private String url="jdbc:mysql://localhost:3306/"+db;
 
     public Conexion() {
     }
